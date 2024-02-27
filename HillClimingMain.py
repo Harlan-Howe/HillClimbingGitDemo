@@ -15,7 +15,7 @@ def main():
     best_pt = (nf.get_size()/2, nf.get_size()/2)
     stopping_points = []
     total_steps = 0
-    for i in range(15):
+    for i in range(NUM_CLIMBERS):
         stops, pt = climb_hill_to_max(nf)
         print(f"{pt} by way of {stops}")
 
